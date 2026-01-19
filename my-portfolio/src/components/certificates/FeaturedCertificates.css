@@ -184,3 +184,12 @@
     right: 5px;
   }
 }
+@media (max-width: 400px) {
+  .arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    background: rgba(0,0,0,0.45); /* less harsh */
+    backdrop-filter: blur(6px);
+  }
+}

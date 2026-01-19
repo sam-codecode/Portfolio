@@ -145,3 +145,32 @@ body.modal-open {
   font-size: 0.85rem;
 }
 }
+
+@media (max-width: 380px) {
+  .nav-links {
+    font-size: 0.25rem;
+    gap: 7px;
+    justify-content: right;
+  }
+  .logo {
+  font-size: 1.0rem;
+  margin-right: 20px;
+}
+.nav-links a {
+  font-size: 0.85rem;
+}
+}
+@media (max-width: 340px) {
+  .nav-links {
+    font-size: 0.25rem;
+    gap: 7px;
+    justify-content: right;
+  }
+  .logo {
+  font-size: 1.0rem;
+  margin-right: 10px;
+}
+.nav-links a {
+  font-size: 0.85rem;
+}
+}
