@@ -1,0 +1,135 @@
+/* ===============================
+   SECTION
+================================ */
+.certs-section {
+  padding: 140px 8vw 170px;
+  background: radial-gradient(circle at top, #0b1020, #05070d);
+  margin-bottom: 300px;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.certificates-title {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+/* ===============================
+   TABS
+================================ */
+.cert-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 80px;
+}
+
+.cert-tab {
+  padding: 15px 25px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(120,160,255,0.4);
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.cert-tab.active {
+  background: rgba(59,130,246,0.15);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(59,130,246,0.8);
+}
+
+/* ===============================
+   GRID
+================================ */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===============================
+   CARD (RENAMED)
+================================ */
+.cert-grid-card {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 22px;
+  padding: 26px;
+  text-align: center;
+
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.65),
+    0 0 45px rgba(59,130,246,0.3);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cert-grid-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow:
+    0 45px 90px rgba(0,0,0,0.85),
+    0 0 70px rgba(59,130,246,0.6);
+}
+
+/* ===============================
+   IMAGE
+================================ */
+.cert-grid-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  background: #020617;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===============================
+   TEXT
+================================ */
+.cert-grid-card h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.cert-grid-card p {
+  font-size: 1.0rem;
+  color: #9aa4b2;
+  margin-bottom: 10px;
+}
+
+.cert-view {
+  color: #60a5fa;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.cert-view:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .certificates-title {
+  font-size: 2.8rem;
+}
+
+}
+
+@media (max-width: 600px) {
+  .cert-tabs {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .cert-tab {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
