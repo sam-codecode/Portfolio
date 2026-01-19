@@ -7,7 +7,7 @@ export default function Hero() {
 
         {/* LEFT — PHOTO */}
         <div className="hero-photo">
-          <img src="/src/assets/profile.jpg" alt="Samuel Raj" />
+          <img src="/images/profile.jpg" alt="Samuel Raj" />
         </div>
 
         {/* RIGHT — CONTENT */}
