@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
 }
-
 .hero-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,54 +29,38 @@
       0 0 80px rgba(79, 140, 255, 0.15);
   }
 }
-
 .hero-photo {
   animation: glowPulse 4s ease-in-out infinite;
 }
-
-
-/* PHOTO */
 .hero-photo {
   width: 300px;
   height: 420px;
   border-radius: 18px;
   overflow: hidden;
   position: relative;
-
-  /* Glow */
   box-shadow:
     0 0 30px rgba(79, 140, 255, 0.35),
     0 0 80px rgba(79, 140, 255, 0.15);
-
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-
-/* Image itself */
 .hero-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* Hover effect */
 .hero-photo:hover {
   transform: translateY(-6px);
   box-shadow:
     0 0 45px rgba(79, 140, 255, 0.45),
     0 0 120px rgba(79, 140, 255, 0.25);
 }
-
-
-/* CONTENT */
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 16px;
 }
-
 .hero-content h1 span {
   color: #4f8cff;
 }
-
 .hero-intro {
   max-width: 640px;
   font-size: 1.05rem;
@@ -85,134 +68,101 @@
   color: #b8c0cc;
   margin-bottom: 40px;
 }
-
-/* INFO GRID */
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
 .hero-card {
   background: linear-gradient(
     180deg,
     rgba(255,255,255,0.05),
     rgba(255,255,255,0.02)
   );
-
   border-radius: 16px;
   padding: 20px;
-
   border: 1px solid rgba(255,255,255,0.08);
   backdrop-filter: blur(10px);
-
   transition: transform 0.5s ease, box-shadow 0.4s ease;
 }
-
 .hero-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
-
 .hero-card h3 {
   margin-bottom: 10px;
   color: #ffffff;
 }
-
 .hero-card p,
 .hero-card li {
   font-size: 0.9rem;
   color: #b8c0cc;
 }
-
 .hero-card ul {
   padding-left: 18px;
 }
 
-
-
-/* ===============================
-   TABLET FIX (768px – 1024px)
-================================ */
+/*Responsive websote*/
 @media (max-width: 1024px) {
   .hero-content {
     gap: 40px;
   }
-
-  /* Info cards container */
   .hero-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
-
-  /* Make Experience card full width */
   .hero-card.experience {
     grid-column: span 2;
   }
-
-  /* Increase card padding for readability */
   .hero-card {
     padding: 26px 22px;
   }
 }
-
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 48px;
     justify-items: center;
   }
-
   .hero-photo {
     width: 260px;
     height: 360px;
   }
-
   .hero-content {
     text-align: center;
     max-width: 720px;
   }
-
   .hero-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 720px) {
   .hero {
     min-height: auto;
     padding: 100px 0 80px;
   }
-
   .hero-inner {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     gap: 40px;
   }
-
   .hero-photo {
     width: 220px;
     height: 320px;
   }
-
   .hero-content h1 {
     font-size: 2.2rem;
   }
-
   .hero-intro {
     font-size: 0.95rem;
   }
-
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 }
-
 @media (max-width: 600px) {
   .hero-grid {
     grid-template-columns: 1fr;
-  }
-
-}
+  }}

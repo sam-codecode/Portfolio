@@ -1,25 +1,20 @@
 import { useState } from "react";
 import { certificatesData } from "../components/certificates/certificatesData";
 import "./Certificates.css";
-
 const categories = [
   { key: "ai", label: "AI" },
   { key: "dataScience", label: "Data Science" },
   { key: "machineLearning", label: "Machine Learning" },
   { key: "deepLearning", label: "Deep Learning" },
 ];
-
 export default function Certificates() {
   const [activeCategory, setActiveCategory] = useState("ai");
-
   const activeCertificates = certificatesData[activeCategory] || [];
-
   return (
     <section className="certificates-section" id="certificates">
       <h2 className="certificates-title">
         Certificates
       </h2>
-
       <div className="cert-tabs">
         {categories.map((cat) => (
           <button
@@ -29,9 +24,7 @@ export default function Certificates() {
           >
             {cat.label}
           </button>
-        ))}
-      </div>
-
+        ))}</div>
       <div className="cert-grid">
         {activeCertificates.map((cert, index) => (
           <div className="cert-grid-card" key={index}>
@@ -42,13 +35,11 @@ export default function Certificates() {
               href={cert.file}
               target="_blank"
               rel="noopener noreferrer"
-              className="cert-view"
-            >
+              className="cert-view">
               View Certificate →
             </a>
           </div>
         ))}
       </div>
     </section>
-  );
-}
+  );}

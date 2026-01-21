@@ -4,27 +4,21 @@ export default function Hero() {
   return (
     <section id="about" className="hero">
       <div className="hero-inner">
-
-        {/* LEFT — PHOTO */}
+        {}
         <div className="hero-photo">
           <img src="/images/profile.jpg" alt="Samuel Raj" />
         </div>
-
-        {/* RIGHT — CONTENT */}
+        {}
         <div className="hero-content">
           <h1>
-            Hi, I’m <span>Samuel Raj</span>
-          </h1>
-
+            Hi, I’m <span>Samuel Raj</span></h1>
           <p className="hero-intro">
             Data Science & AI enthusiast focused on building intelligent,
             real-world solutions at the intersection of mathematics,
             machine learning, and software engineering.
           </p>
-
-          {/* INFO GRID */}
+          {}
           <div className="hero-grid">
-
             <div className="hero-card">
               <h3>Education</h3>
               <p>
@@ -34,7 +28,6 @@ export default function Hero() {
                 Expected Graduation: 2028
               </p>
             </div>
-
             <div className="hero-card">
               <h3>Technical Skills</h3>
               <ul>
@@ -44,7 +37,6 @@ export default function Hero() {
                 <li>Statistics, Probability, Linear Algebra, Calculus</li>
               </ul>
             </div>
-
             <div className="hero-card">
               <h3>Experience</h3>
               <p>
@@ -54,11 +46,8 @@ export default function Hero() {
                 <em>(Replace later)</em>
               </p>
             </div>
-
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
+  );}

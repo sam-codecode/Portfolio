@@ -1,3 +1,4 @@
+// Import all the files needed
 import Navbar from "./components/common/Navbar"
 import Hero from "./sections/Hero"
 import FeaturedCertificates from "./components/certificates/FeaturedCertificates"
@@ -8,7 +9,6 @@ export default function App() {
   return (
     <>
       <Navbar />
-
       <main>
         <Hero/>
         <FeaturedCertificates />
@@ -17,5 +17,4 @@ export default function App() {
          <Contact />
       </main>
     </>
-  )
-}
+  )}

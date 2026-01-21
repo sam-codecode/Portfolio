@@ -1,3 +1,4 @@
+// Put your goddamn certicate details here
 export const certificatesData = {
   ai: [
     {

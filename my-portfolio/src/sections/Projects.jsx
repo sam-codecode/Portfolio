@@ -1,4 +1,3 @@
-// src/sections/Projects.jsx
 import { useState } from "react";
 import { projectsData } from "../data/projectsData";
 import ProjectModal from "../components/projects/ProjectModal";
@@ -6,11 +5,9 @@ import "./Projects.css";
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
-
   return (
     <section className="projects-section" id="projects">
       <h2 className="projects-title">My Projects</h2>
-
       <div className="projects-grid">
         {projectsData.map((project) => (
           <div
@@ -27,22 +24,19 @@ export default function Projects() {
       "--y",
       `${e.clientY - rect.top}px`
     );
-  }}
-          >
-            <img src={project.image} alt={project.title} />
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <p>{project.shortDesc}</p>
-              <div className="project-tags">
-                {project.tech.map((t, i) => (
-                  <span key={i}>{t}</span>
-                ))}
+  }}>
+  <img src={project.image} alt={project.title} />
+  <div className="project-info">
+  <h3>{project.title}</h3>
+  <p>{project.shortDesc}</p>
+  <div className="project-tags">
+{project.tech.map((t, i) => (
+  <span key={i}>{t}</span>))}
               </div>
             </div>
           </div>
         ))}
       </div>
-
       {selectedProject && (
         <ProjectModal
           project={selectedProject}
@@ -50,5 +44,4 @@ export default function Projects() {
         />
       )}
     </section>
-  );
-}
+  );}

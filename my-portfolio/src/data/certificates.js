@@ -1,3 +1,4 @@
+// Ultra pro max cert details mattume
 export const featuredCertificates = [
   {
     id: 1,
