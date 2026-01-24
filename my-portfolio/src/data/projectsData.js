@@ -37,6 +37,7 @@ export const projectsData = [
     solution: "A e-commerce system developed for a cafe",
     tech: ["Java","MySQL","Javascript","Apache Tomcat","CSS"],
     image: "/images/projects/cafe.png",
+    live: "https://girliecafeecommerce-production.up.railway.app/",
     github: "https://github.com/sam-codecode/Girlie_Cafe_Ecommerce",
   },
 ];
