@@ -28,6 +28,18 @@ export const certificatesData = {
       file: "/images/certificates/data-science/DataAnalytics(30day-Intern)Pantech.pdf",
       preview: "/images/certificates/data-science/DataAnalytics(30day-Intern)Pantech.png",
     },
+    {
+      title: "IBM Applied Data Science Professional Certificate",
+      issuer: "IBM",
+      file: "/images/certificates/data-science/Applied Data Science (IBM).pdf",
+      preview: "/images/certificates/data-science/ibm-applied-ds.png",
+    },
+      {
+      title: "Google Data Analytics Professional Certificate",
+      issuer: "Google",
+      file: "/images/certificates/data-science/Data Analytics  (Google).pdf",
+      preview: "/images/certificates/data-science/google-data-analytics.png",
+    },
   ],
 
   machineLearning: [
@@ -52,11 +64,40 @@ export const certificatesData = {
       file: "/images/certificates/deep-learning/DeepLearning(30day-Intern)Pantech.pdf",
       preview: "/images/certificates/deep-learning/DeepLearning(30day-Intern)Pantech.png",
     },
-        {
-      title: "Numpy & Pandas for Deep Learning",
-      issuer: "University of Michigan",
-      file: "/images/certificates/deep-learning/Numpy&Pandas (U.Michigan).pdf",
-      preview: "/images/certificates/deep-learning/Numpy&Pandas (U.Michigan).png",
+  ],
+    mathematics: [
+    {
+      title: "Mathematics for ML: Multivariate Calculus",
+      issuer: "Imperial College London",
+      file: "/images/certificates/mathematics/Multivariable Calculus.pdf",
+      preview: "/images/certificates/mathematics/Multivariable Calculus.png",
+    },
+     {
+      title: "Mathematics for ML: Linear Algebra",
+      issuer: "Imperial College London",
+      file: "/images/certificates/mathematics/Linear Algebra.pdf",
+      preview: "/images/certificates/mathematics/Linear Algebra.png",
+    },
+    {
+      title: "Mathematics for ML: PCA",
+      issuer: "Imperial College London",
+      file: "/images/certificates/mathematics/PCA.pdf",
+      preview: "/images/certificates/mathematics/PCA.png",
+    },
+    {
+      title: "Mathematics for Machine Learning Specialization",
+      issuer: "Imperial College London",
+      file: "/images/certificates/mathematics/Mathematics for ML (Specialization).pdf",
+      preview: "/images/certificates/mathematics/Mathematics for ML (Specialization).png",
     },
   ],
+    dsa: [
+    {
+      title: "Microsoft's Data Structure & Algorithm",
+      issuer: "Microsoft",
+      file: "/images/certificates/dsa/DSA(Microsoft).pdf",
+      preview: "/images/certificates/dsa/DSA(Microsoft).png",
+    },
+  ],
+
 };

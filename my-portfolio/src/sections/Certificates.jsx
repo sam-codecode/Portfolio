@@ -6,6 +6,8 @@ const categories = [
   { key: "dataScience", label: "Data Science" },
   { key: "machineLearning", label: "Machine Learning" },
   { key: "deepLearning", label: "Deep Learning" },
+  { key : "mathematics", label: "Mathematics"},
+  { key : "dsa", label: "DSA"},
 ];
 export default function Certificates() {
   const [activeCategory, setActiveCategory] = useState("ai");

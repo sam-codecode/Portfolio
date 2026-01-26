@@ -30,7 +30,7 @@ export default function FeaturedCertificates() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((i) => (i + 1) % length);
-    }, 3500);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, [length]);
